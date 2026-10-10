@@ -1,0 +1,13 @@
+{
+  "name": "catalog",
+  "version": "1.0.0",
+  "description": "The catalog Function App: lists the products on sale",
+  "main": "src/functions/*.js",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.16.0"
+  }
+}
