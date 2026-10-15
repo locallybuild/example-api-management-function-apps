@@ -162,7 +162,7 @@ The orders app keeps orders in memory, so they're lost when its worker restarts.
 
 Every policy keeps `<base />` in each section, so the product's rate limit (the outer scope) runs before the API's `set-header`s. Locally runs the `inbound` section only, which is all this example uses: `outbound` and `backend` policies aren't applied yet.
 
-API Management also has `azurerm_api_management_backend` entities, with `credentials` that can add a header such as `x-functions-key`. This example uses `service_url` and a `set-header` policy instead because Locally's gateway doesn't yet apply backend entities or their credentials. On Azure both approaches work.
+API Management also has `azurerm_api_management_backend` entities, with `credentials` that can add a header such as `x-functions-key`. This example uses `service_url` and a `set-header` policy instead. Both approaches work on Azure and within Locally: [`example-api-management-backends`](https://github.com/locallybuild/example-api-management-backends) fronts Function Apps and a Web App with backends, the way Azure's "import from Function App" sets them up.
 
 The rate limit is set by the `rate_limit_calls` and `rate_limit_period` variables on the module.
 
