@@ -66,6 +66,7 @@ Neither app connects to anything except its host storage (`AzureWebJobsStorage`)
 * Either [HashiCorp Terraform](https://terraform.io) or [OpenTofu](https://opentofu.org).
 * Either [Docker](https://www.docker.com) or [Podman](https://podman.io) (recommended).
 * [Node.js](https://nodejs.org) 22+, to install the functions' dependencies.
+* [jq](https://jqlang.org), which some of the commands below use to read Terraform's JSON outputs.
 * The Locally Plugin for `Microsoft.ApiManagement` installed (`locally plugin install --name Microsoft.ApiManagement`).
 * The Locally Plugin for `Microsoft.Storage` installed (`locally plugin install --name Microsoft.Storage`).
 * The Locally Plugin for `Microsoft.Web` installed (`locally plugin install --name Microsoft.Web`).
